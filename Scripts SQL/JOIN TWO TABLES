@@ -1,0 +1,8 @@
+SELECT
+  SalesLT.Customer.FirstName AS First_name,
+  SalesLT.Customer.MiddleName AS Middle_name,
+  SalesLT.Customer.LastName AS Last_name,
+  SalesLT.CustomerAddress.AddressID AS Address_ID,
+  SalesLT.CustomerAddress.AddressType AS Address_type
+FROM SalesLT.Customer
+JOIN SalesLT.CustomerAddress ON SalesLT.Customer.CustomerID= SalesLT.CustomerAddress.CustomerID;
